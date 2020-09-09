@@ -1,2 +1,1 @@
-/* init vuejs here */
-
+// init vuejs here
