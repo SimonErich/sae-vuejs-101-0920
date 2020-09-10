@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>What a wonderful view 3</title>
+    <title>What a wonderful view 6 - Filters</title>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
     <script src="js/app.js" defer></script>
@@ -14,10 +14,9 @@
     <div id="app">
 
         <h1>DognameFinder3000:</h1>
-        <input type="text" /><br />
+        <p>Der Vorschlag ist: {{dogname}}</p>
 
-        <p>Der Vorschlag ist: DOGNAME</p>
-
+        <input type="text" v-model="dogname" />
 
     </div>
 
