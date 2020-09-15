@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>What a wonderful view 8 - components with dynamic props</title>
+
+    <!-- Tailwind css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css"
+        integrity="sha512-KO1h5ynYuqsFuEicc7DmOQc+S9m2xiCKYlC3zcZCSEw0RGDsxcMnppRaMZnb0DdzTDPaW22ID/gAGCZ9i+RT/w=="
+        crossorigin="anonymous" />
+
+    <!-- index.html-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+
+    <!-- insert components here -->
+
+    <!-- workspace -->
+    <script src="js/components/workspace-switcher/workspace-switch.js" defer></script>
+    <script src="js/components/workspace-switcher/workspace-bar.js" defer></script>
+
+    <!-- workspace -->
+    <script src="js/components/channelbar/channel-item.js" defer></script>
+    <script src="js/components/channelbar/channel-bar.js" defer></script>
+
+    <!-- message -->
+    <script src="js/components/chat-content/chat-topbar.js" defer></script>
+    <script src="js/components/chat-content/chat-composer.js" defer></script>
+    <script src="js/components/chat-content/chat-message.js" defer></script>
+    <script src="js/components/chat-content/chat-content.js" defer></script>
+
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+    <div id="app" class="h-screen">
+
+        <div class="font-sans antialiased h-screen flex">
+            <workspace-bar v-bind:workspaces="workspaces"></workspace-bar>
+
+            <channel-bar v-bind:channels="channels" v-bind:username="username"></channel-bar>
+
+            <chat-content v-bind:currentChannel="channels[0]" v-bind:messages="messages"></chat-content>
+
+        </div>
+
+</body>
+
+</html>
