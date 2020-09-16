@@ -5,9 +5,13 @@ const ChannelBar = Vue.component('channel-bar', {
         <div class="text-white mb-2 mt-3 px-4 flex justify-between">
             <div class="flex-auto">
                 <h1 class="font-semibold text-xl leading-tight mb-1 truncate">SAE VueJS 2020</h1>
-                <div class="flex items-center mb-6">
+                <div class="flex items-center">
                     <span class="bg-green rounded-full block w-2 h-2 mr-2"></span>
                     <span class="text-white opacity-50 text-sm">{{username}}</span>
+                </div>
+                <div class="flex items-center mb-6">
+                    <span class="bg-green rounded-full block w-2 h-2 mr-2"></span>
+                    <span class="text-white opacity-50 text-sm">#######STATUS#######</span>
                 </div>
             </div>
             <div>
